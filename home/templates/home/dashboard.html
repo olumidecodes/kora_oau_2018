@@ -1,64 +1,222 @@
 <!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ajo ng &bullet; Save your Money</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
-  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Welcome to Ajo | Dashboard</title>
+
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="AdminLTE.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="_all-skins.min.css">
+
 </head>
 
-<body>
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
 
-  <nav class="indigo" >
-
-  <!-- Logo comes on the leftbrand and picture + name + log out button on the right -->
-  </nav>
-
-  <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0%)">
-    <li class="logo">
-      <a id="logo-container" class="brand-logo">
-        
-        <!-- Put designed logo here -->
-
+    <header class="main-header">
+      <a href="#" class="logo">
+     
+        <span class="logo-lg">
+          <b>Ajo</b>NG</span>
+          <!-- Replace with logo -->
       </a>
-    </li>
 
-    
       
-        </li>
-        <li class="bold active">
-          <a class="collapsible-header waves-effect waves-teal" tabindex="0">JavaScript</a>
-          
-        </li>
-        <li class="bold">
-          <a class="collapsible-header waves-effect waves-teal" 
-        </li>
-      </ul>
-    </li>
-    <li class="bold">
-      <a href="mobile.html" class="waves-effect waves-teal">Mobile</a>
-    </li>
-    <li class="bold">
-      <a href="showcase.html" class="waves-effect waves-teal">Showcase</a>
-    </li>
-    <li class="bold">
-      <a href="themes.html" class="waves-effect waves-teal">Themes
-        <span class="new badge"></span>
-      </a>
-    </li>
-  </ul>
+      <nav class="navbar navbar-static-top">
+
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
 
 
-  <script>
-    // Sidenav
-    const sideNav = document.querySelector('.sidenav');
-    M.Sidenav.init(sideNav, {});
-  </script>
+
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Samson Olanrewaju</span>
+              </a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <a href="#" data-toggle="control-sidebar">
+                    <i class="fa fa-gears"></i>
+                  </a>
+                </li>
+              </ul>
+        </div>
+
+      </nav>
+    </header>
+    
+    <aside class="main-sidebar">
+      
+      <section class="sidebar">
+        
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Samson Olanrewaju</p>
+            <a href="#">
+              <i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+
+        <ul class="sidebar-menu" data-widget="tree">
+
+          <li class="active treeview menu-open">
+            <a href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Transactions</span>
+
+            </a>
+            <br>
+            <br>
+            <a href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Insights</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+
+          </li>
+
+          </li>
+
+
+          <li class="header" style="margin-top: 50px">
+            <a href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Support</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <a href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Support</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+          </li>
+
+
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <div class="content-wrapper">
+      
+      <section class="content-header">
+        <h1>
+          Dashboard
+          <small>Version 2.0</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">
+              <i class="fa fa-dashboard"></i> Home</a>
+          </li>
+          <li class="active">Dashboard</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Name to be here</h3>
+
+                <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-wrench"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li>
+                        <a href="#">Action</a>
+                      </li>
+                      <li>
+                        <a href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a href="#">Something else here</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">Separated link</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-box-tool" data-widget="remove">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- /.box-header -->
+
+              <!-- ./box-body -->
+              <div class="box-footer">
+                <div class="row">
+                  <div class="col-sm-3 col-xs-6">
+                    <div class="description-block border-right">
+                      <span class="description-percentage text-green">
+                        <span>Ajo code goes here.</span>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    </div>
+    <!--/.box -->
+  </div>
+
+  <footer class="main-footer text-center">
+
+    <strong>Copyright &copy; 2018
+      <a href="#">AjoNg Inc</a>.</strong> All rights reserved.
+  </footer> 
+
 </body>
 
 </html>
