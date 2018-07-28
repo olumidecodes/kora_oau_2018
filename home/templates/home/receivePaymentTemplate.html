@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<script>
+    function PostDetails(recipient_name, account_number, bank_code, description) {
+         var xhr = new XMLHttpRequest();
+    xhr.open("POST","https://api.paystack.co/transferrecipient", true);
+    xhr.
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Authorization', 'pk_live_0137378d34bb476e2fcb2126c011eff5935eb2a8');
+    xhr.send(JSON.stringify({
+        "type": "nuban",
+       "name": recipient_name,
+       "description": description,
+       "account_number": account_number,
+       "bank_code": bank_code,
+       "currency": "NGN",
+    }));
+    xhr.onreadystatechange = function() {
+        if (http.readyState == 4 && http.status == 200) {
+            document.open();
+            document.write(http.responseText);
+        }
+    }
+    }
+    var name = prompt("Full Name");
+    var account_number = prompt("Your Account number");
+    var bank_code = prompt("bank code");
+    var description = prompt("Description");
+</script>
+
+
+<button type="submit" onclick="PostDetails(name, description, account_number , bank_code)">Submit</button>
+
+
