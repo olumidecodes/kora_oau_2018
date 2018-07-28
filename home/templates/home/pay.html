@@ -6,10 +6,10 @@
 <script>
   function payWithPaystack(){
     var handler = PaystackPop.setup({
-      key: 'pk_live_0137378d34bb476e2fcb2126c011eff5935eb2a8',
-      email: 'tay2druh@gmail.com',
-      amount: 10000,
-      ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+      key: {{ public_key }},
+      email: {{ email }},
+      amount: {{ money }},
+      ref: {{ reference_code }},
       metadata: {
          custom_fields: [
             {
@@ -20,7 +20,7 @@
          ]
       },
       callback: function(response){
-          window.location.href = "{% url 'home' %}";
+          window.location.href = "{% url 'success' %}";
           alert('success. transaction ref is ' + response.reference);
       },
       onClose: function(){

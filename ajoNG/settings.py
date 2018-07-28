@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'g2$3vgbl2_rn&7@8$virm$^2-c(&&s-dm#cg(i%kxff8(2137)'
-
+PAYPAL_PUBLIC_KEY = 'pk_live_0137378d34bb476e2fcb2126c011eff5935eb2a8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
