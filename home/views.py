@@ -22,7 +22,7 @@ BankCodes = {
 def index(request):
     user_details = models.User_Dashboard_Details.objects.get(user=request.user)
     args = {'user_details':user_details}
-    return render(request, 'home/dashboard.html', args)
+    return render(request, 'home/dash.html', args)
 
 
 def getObject(request, id):
