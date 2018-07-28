@@ -8,5 +8,5 @@ urlpatterns = [
     path('receive/', views.ReceivePayment),
     path('register/', views.RegistrationView, name='registration'),
     # LOGIN PAGE
-    path('login/', login, {'template_name': 'home/loginPage.html'}, name='login'),
+    path('login/', views.LoginView, name='login'),
 ]

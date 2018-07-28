@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajo ng &bullet; Save your Money</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+  <nav class="indigo" >
+
+  <!-- Logo comes on the leftbrand and picture + name + log out button on the right -->
+  </nav>
+
+  <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0%)" col s6>
+    <li class="logo">
+      <a id="logo-container" class="brand-logo">
+        
+        <!-- Put designed logo here -->
+
+      </a>
+    </li>
+
+    
+      
+        </li>
+        <li class="bold active">
+          <a class="collapsible-header waves-effect waves-teal" tabindex="0">JavaScript</a>
+          
+        </li>
+        <li class="bold">
+          <a class="collapsible-header waves-effect waves-teal" 
+        </li>
+      </ul>
+    </li>
+    <li class="bold">
+      <a href="mobile.html" class="waves-effect waves-teal">Mobile</a>
+    </li>
+    <li class="bold">
+      <a href="showcase.html" class="waves-effect waves-teal">Showcase</a>
+    </li>
+    <li class="bold">
+      <a href="themes.html" class="waves-effect waves-teal">Themes
+        <span class="new badge"></span>
+      </a>
+    </li>
+  </ul>
+
+
+  <script>
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+  </script>
+</body>
+
+</html>

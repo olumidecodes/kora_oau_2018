@@ -9,7 +9,7 @@ from home import forms
 def index(request):
     user_details = models.User_Dashboard_Details.objects.get(user=request.user)
     args = {'user_details':user_details}
-    return render(request, 'home/index.html', args)
+    return render(request, 'home/dashboard.html', args)
 
 
 def getObject(request, id):
@@ -35,12 +35,13 @@ def RegistrationView(request):
         form = forms.RegistrationForm
         args = {'form': form}
 
-        return render(request, 'home/registrationTemplate.html', args)
+        return render(request, 'home/register.html', args)
 
     elif request.method == "POST":
         form = forms.RegistrationForm(request.POST)
 
-        if form.is_valid():
+
+        if form.is_valid:
             saved = form.save(commit=False)
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
@@ -52,7 +53,7 @@ def RegistrationView(request):
                     login(request, user)
                     return redirect('home')
 
-        return render(request, 'home/registrationTemplate.html', {'form':forms.RegistrationForm})
+        return render(request, 'home/register.html', {'form':forms.RegistrationForm})
 
 
 def LoginView(request):
