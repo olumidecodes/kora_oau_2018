@@ -10,7 +10,9 @@ Team TEO
     tay2druh@gmail.com
     github.com/tay2druh
 
-3. 
+3. Onafeso Emmanuel
+    emadeulti55@gmail.com
+    github.com/itzemade
 
 #### Your Solution
 
