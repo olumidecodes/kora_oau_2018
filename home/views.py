@@ -48,7 +48,7 @@ def ReceivePayment(request):
         import requests, json
 
         headers = {
-            'Authorization': 'Bearer sk_live_62e1ef19e3cc49e5f80ccc70b13d188ef6e6c79b',
+            'Authorization': 'Bearer API_KEY',
             'Content-Type': 'application/json',
         }
 
